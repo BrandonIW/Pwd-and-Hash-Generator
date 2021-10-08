@@ -1,5 +1,5 @@
 # Pwd-and-Hash-Generator
-Interactive program built in python. First allows you to customize password creation followed up the option to hash each created password
+Interactive program built in python. First allows you to customize password creation followed up with the option to hash each created password
 
 This program is one I built for a school project. The project currently relies on the popular "Rockyou.txt" password database for some of it's functioning, which can be downloaded else.
 
