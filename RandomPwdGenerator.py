@@ -72,8 +72,7 @@ def file_write(list,wordlist=False):
                 file.write(f"{pwd}\n")
     print("Completed operation")
 
-
-if __name__ == '__main__':
+def main():
     ascii = pyfiglet.figlet_format("Password & Hash Generator", font="standard")
     print(termcolor.colored(ascii, color='red'))
     sleep(1)
@@ -101,7 +100,7 @@ if __name__ == '__main__':
         sym = input("Password(s) will contain symbols? (Y/N): ").lower()
 
         if regex_nums.fullmatch(num_pass) and regex_nums.fullmatch(num_char) and regex_upto.fullmatch(upto) and \
-        regex_lett.fullmatch(lower) and regex_lett.fullmatch(upper) and regex_lett.fullmatch(nums) and regex_lett.fullmatch(sym):
+                regex_lett.fullmatch(lower) and regex_lett.fullmatch(upper) and regex_lett.fullmatch(nums) and regex_lett.fullmatch(sym):
             upto = False if upto == '1' else True
             lower = False if lower == 'n' else True
             upper = False if upper == 'n' else True
@@ -130,3 +129,6 @@ if __name__ == '__main__':
                     quit()
 
             print("Invalid entries. Numbers needed for first 3 questions. Y/N for remaining questions")
+
+if __name__ == '__main__':
+    main()

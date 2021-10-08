@@ -90,8 +90,11 @@ class CSV_Hasher:
         self.sha512(filename, True)
         print("All hashes completed")
 
+def main():
+    obj = CSV_Hasher('password_list.txt')
+
 if __name__ == '__main__':
-    obj = CSV_Hasher('rockyou.txt')
+    main()
 
 
 
