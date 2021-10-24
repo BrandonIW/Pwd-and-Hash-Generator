@@ -19,7 +19,7 @@ def pwd_generator_wordlist(num_passwords,num_chars,upto,Lower,Upper,Nums,Sym,wor
         num_lines = sum(1 for line in file)
 
         while len(pwd_list) < int(num_passwords):         # Instead of saving the wordlist in a data structure and in memory, we can seek to a random line and read
-            seek = randint(0,num_lines)
+            seek = choice(0,num_lines)
             file.seek(seek)
             pwd = file.readline()[:-2]
             validate_pwd = all([False if char in char_set else True for char in pwd])
